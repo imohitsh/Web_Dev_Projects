@@ -1,0 +1,163 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.Img-1, .Img-2, .Img-3, .Img-4
+{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+}
+img
+{
+ width: 180%;
+ position: absolute;
+ left: 50%;
+ right:50%;
+ transform: translate(-50%,-50%);
+}
+.text-box
+{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: gold;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup
+{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background: white;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+}
+.Img-1
+{
+    animation: slide1 12s linear infinite;
+}
+.Img-2
+{
+    animation: slide2 12s linear infinite;
+}
+.Img-3
+{
+    animation: slide3 12s linear infinite;
+}
+.Img-4
+{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1
+{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2
+{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3
+{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4
+{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.text-box1
+{
+    animation-delay: 0s;
+}
+.text-box2
+{
+    animation-delay: 3s;
+}
+.text-box3
+{
+    animation-delay: 6s;
+}
+.text-box4
+{
+    animation-delay: 9s;
+}
